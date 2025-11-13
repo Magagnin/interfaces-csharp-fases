@@ -1,1 +1,15 @@
+Fase 2 — Testes e Reflexão
+
+Casos de Teste:
+
+1. Entrada: "csharp é top" | Modo: 1 | Saída esperada: "CSHARP É TOP"
+2. Entrada: "CSharp É Top" | Modo: 2 | Saída esperada: "csharp é top"
+3. Entrada: "csharp é top" | Modo: 3 | Saída esperada: "Csharp É Top"
+4. Entrada: "abc" | Modo: 4 | Saída esperada: "cba"
+5. Entrada: "" | Modo: 1 | Saída esperada: ""
+
+Reflexão:
+A abordagem procedural é simples, mas não escalável.
+Cada novo modo exige alterar a função principal,
+violando o princípio aberto/fechado da programação orientada a objetos.
 
