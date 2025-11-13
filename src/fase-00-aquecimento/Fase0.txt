@@ -1,1 +1,15 @@
+1️⃣ Caso: Pagamento
+- Objetivo: Permitir que o cliente pague sua compra de forma segura e rápida.
+- Contrato: Processar pagamento (recebe valor e dados do pagador, retorna sucesso/erro).
+- Implementação A: Pix — transferência instantânea via chave.
+- Implementação B: Cartão — crédito/débito com autenticação via token.
+- Política: Valores até R$500 → Pix; acima de R$500 → Cartão.
+- Risco/Observação: Falha na rede pode atrasar a confirmação do Pix.
 
+2️⃣ Caso: Notificação
+- Objetivo: Garantir que o usuário receba atualizações do sistema.
+- Contrato: Notificar usuário (enviar mensagem com status).
+- Implementação A: E-mail — usado quando o usuário está online.
+- Implementação B: SMS — usado quando o usuário está offline.
+- Política: Se usuário estiver offline → SMS; caso contrário → E-mail.
+- Risco/Observação: SMS tem custo por envio e pode atrasar em algumas operadoras.
